@@ -4,7 +4,7 @@ import sys
 
 input = sys.stdin.read().splitlines()
 
-pattern = re.compile(r'(\w+) (\w{3}) (-?\d+) if (\w+) (.{1,2}) (-?\d+)')
+pattern = re.compile(r'^(\w+) (\w{3}) (-?\d+) if (\w+) (.{1,2}) (-?\d+)$')
 ops = {
     '>': operator.gt,
     '<': operator.lt,
